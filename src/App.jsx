@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <nav>
-          Teste
+        Teste
         </nav>
       </div>
     </>
