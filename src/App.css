@@ -1,0 +1,14 @@
+a {
+  margin-left: 10px;
+}
+
+.container {
+  background-color: #DFD4FF;
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: #B5C0FF;
+}
+
+button {
+  margin-bottom: 8px;
+}
