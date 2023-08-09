@@ -74,7 +74,7 @@ const handleSearch = () => {
                   <h4>Temperatura: {weatherForecast.current.temp_c}°</h4>
                   <p> Sensação térmica de: {weatherForecast.current.feelslike_c}°</p>
                   <p>Umidade: {weatherForecast.current.humidity}%</p>
-                  <p>Velocidade do vento: {weatherForecast.current.wind_kph}kph</p>
+                  <p className = "mb-4">Velocidade do vento: {weatherForecast.current.wind_kph}kph</p>
                 </div>
 
                 </div>
