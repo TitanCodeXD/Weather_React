@@ -12,3 +12,8 @@ a {
 button {
   margin-bottom: 8px;
 }
+
+nav {
+  background: rgb(83,42,42);
+  background: linear-gradient(62deg, rgba(83,42,42,1) 26%, rgba(71,26,26,1) 54%, rgba(25,23,23,1) 100%); 
+}

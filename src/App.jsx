@@ -1,4 +1,7 @@
 import {useState} from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudSun, faCoffee, faSun } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
@@ -27,14 +30,15 @@ const handleSearch = () => {
 
 
         <nav className = "navbar navbar-expanded-md navbar-dark bg-dark mb-4">
-        <a className = "navbar-brand text-white ml-4" href = "#">Previsão do Tempo</a>
+        <a className = "navbar-brand text-white ml-4" href = "#">Previsão do Tempo <FontAwesomeIcon icon={faSun} fade size = "xl" style={{color: "#fff700",}} /> </a>
+        
         </nav>
 
 
         <main className = "container">
           <div className = "jumbotron">
             <h1>
-              Verifique a previsão do tempo da sua cidade!
+              Verifique a previsão do tempo da sua cidade! 
             </h1>
             <p className = "lead">
               Digite o nome da cidade e em seguida clique em pesquisar :)
