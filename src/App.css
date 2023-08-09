@@ -1,12 +1,19 @@
 a {
   margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .container {
-  background-color: #DFD4FF;
+  background: rgb(240,240,240);
+  background: linear-gradient(135deg, rgba(240,240,240,1) 0%, rgba(226,230,237,1) 100%);
   border-radius: 5px;
-  border: solid 2px;
-  border-color: #B5C0FF;
+  border: solid black 1px;
 }
 
 button {
@@ -14,6 +21,73 @@ button {
 }
 
 nav {
-  background: rgb(83,42,42);
-  background: linear-gradient(62deg, rgba(83,42,42,1) 26%, rgba(71,26,26,1) 54%, rgba(25,23,23,1) 100%); 
+  background: rgb(95,146,250);
+  background: linear-gradient(135deg, rgba(95,146,250,1) 0%, rgba(119,150,150,1) 100%); 
+  border-bottom: solid black 1px;
+}
+
+.mb-8 {
+  margin-bottom: 100px;
+}
+
+body {
+  background: rgb(95,146,250);
+  background: linear-gradient(135deg, rgba(95,146,250,1) 0%, rgba(119,150,150,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 20% 50%;
+  }
+
+  50% {
+      background-position: 80% 30%;
+  }
+
+  100% {
+      background-position: 20% 50%;
+  }
+}
+
+.temperatura {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.umidade {
+  margin-bottom:0px;
+
+}
+
+.sensacao {
+  margin-bottom: 0px;
+
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
+  color: black;
+  font-size: 20px;
+}
+
+footer > p {
+  margin: 25px;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
