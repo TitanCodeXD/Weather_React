@@ -13,7 +13,7 @@ setCity(event.target.value);
 };
 
 const handleSearch = () => {
-  fetch(`http://api.weatherapi.com/v1/current.json?key=e29a92e1e65d4405bae231117230808&q=${city}&lang=pt`
+  fetch(`https://api.weatherapi.com/v1/current.json?key=e29a92e1e65d4405bae231117230808&q=${city}&lang=pt`
   ).then((response) => {
     if (response.status === 200) {
       return response.json()
