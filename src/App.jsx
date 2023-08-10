@@ -13,6 +13,13 @@ setCity(event.target.value);
 };
 
 const handleSearch = () => {
+  document.getElementById("press").style.display = "none"
+  document.getElementById("load").style.display = "inline"
+  setTimeout(function(){
+    document.getElementById("press").style.display = "inline"
+    document.getElementById("load").style.display = "none"
+  }, 300);
+  
   fetch(`https://api.weatherapi.com/v1/current.json?key=e29a92e1e65d4405bae231117230808&q=${city}&lang=pt`
   ).then((response) => {
     if (response.status === 200) {
@@ -55,11 +62,15 @@ const handleSearch = () => {
               </div>
             </div>
 
-            <button onClick= {handleSearch} className = "btn btn-primary btn-lg">
-              Pesquisar <FontAwesomeIcon icon={faSearch} size = "lg" style={{color: "black",}} />
+            <button 
+            onClick = {handleSearch} id = "press" className = "btn btn-primary btn-lg"> Pesquisar <FontAwesomeIcon icon={faSearch} size = "lg" style={{color: "black",}} /> 
             </button>
 
+            <button class="btn btn-primary btn-lg display" type="button" disabled id = "load">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Pesquisando...
+            </button>
 
+            
           {
             weatherForecast ? (
               <div>
@@ -88,11 +99,11 @@ const handleSearch = () => {
         <footer>
 
     <p>
-    &copy; Created for
+    &copy; Created by
     <a class = "contact-success"href="https://codepen.io/pen/zYdreOQ" target="_blank"
        ><strong>Wesley Roberto dos Santos <i class="fas fa-user-alt"></i></strong></a>
     </p>
-</footer>
+        </footer>
 
 
       </div>
